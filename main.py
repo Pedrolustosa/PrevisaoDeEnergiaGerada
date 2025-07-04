@@ -16,7 +16,9 @@ app = FastAPI(title="Previsão de Energia Gerada - Todos os Modelos")
 # Adicione a configuração de CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"], # Ou ["*"] para liberar tudo
+    allow_origins=["http://localhost:3000", 
+                   "https://poli-previsao-energia-solar.vercel.app", 
+                   "http://poli-previsao-energia-solar.vercel.app"], # Ou ["*"] para liberar tudo
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
