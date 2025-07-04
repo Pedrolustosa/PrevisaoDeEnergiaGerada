@@ -5,3 +5,4 @@ numpy
 scikit-learn
 statsmodels
 python-multipart
+rpy2==3.5.0
